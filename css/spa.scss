@@ -1,0 +1,313 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+//header container
+.headbox {
+  position: relative;
+  padding-top: 10px;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  height: auto;
+}
+//separate image from text for opacity
+.headbox:before {
+  content: "";
+  background-image: url("./../image/back7.jpg");
+  min-width: 300px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header h1 {
+  position: relative;
+  font-family: "Pacifico", cursive;
+  color: #971b0e;
+  font-size: 100px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding-bottom: 15px;
+}
+header h2 {
+  position: relative;
+  font-family: "Pacifico", cursive;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 45px;
+}
+header h3 {
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-family: "Pacifico", cursive;
+  line-height: 2em;
+  text-align: center;
+}
+
+header a {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+header a:hover {
+  color: red;
+}
+h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+h3 {
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+h4 {
+  padding-top: 10px;
+  color: #fff;
+  text-align: center;
+}
+h5 {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(221, 82, 57);
+}
+p {
+  margin: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+footer {
+  background-color: rgb(189, 212, 216);
+  text-align: center;
+  padding: 25px;
+}
+
+.contact li {
+  list-style-type: none;
+  text-align: center;
+}
+
+/*menu bar*/
+
+nav {
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 0;
+  width: 100%;
+}
+
+nav a:link {
+  color: #ffffff;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  margin: 10px;
+}
+nav a:visited {
+  color: #c94646;
+}
+//create menu button(li)
+.zoom {
+  display: inline-block;
+  font-size: 25px;
+  padding: 10px;
+  background-color: rgb(98, 95, 148);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+//menu bar decoration
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+//page background
+.wrapper {
+  background-image: url(./../image/back.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 25px;
+}
+
+//top container under menu bar
+.container {
+  max-width: 900px;
+  width: auto;
+  height: auto;
+  background-color: rgb(189, 212, 216);
+  margin: 10px auto;
+  overflow: auto;
+  border-radius: 10px;
+}
+// grid conatainer home page
+.bottomwrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 10px auto 10px auto 10px auto;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.box {
+  width: auto;
+  height: auto;
+  background-color: rgb(143, 194, 202);
+  margin: 10px auto;
+  overflow: auto;
+  border-radius: 10px;
+  text-align: center;
+  -ms-flex-line-pack: space-evenly;
+  align-content: space-evenly;
+}
+//service page
+//service info box div
+.servicewrap {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: auto;
+}
+//grid conatainer service page
+.servicebox {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  background-color: rgb(143, 194, 202);
+  margin: 10px auto;
+  overflow: auto;
+  border-radius: 10px;
+}
+//service picture left float
+.service_pic2 {
+  float: left;
+  height: 200px;
+  width: auto;
+  margin: 50px 25px;
+  margin-right: 50px;
+}
+//service picture right float
+.service_pic1 {
+  float: right;
+  height: 200px;
+  width: auto;
+  margin: 50px 25px;
+}
+// service list
+.list_serv {
+  margin-left: 100px;
+}
+
+//special page
+//grid conatainer special page
+.specialwrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 10px auto;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.special_box {
+  width: auto;
+  height: auto;
+  background-color: rgb(143, 194, 202);
+  margin: 10px auto;
+  overflow: auto;
+  border-radius: 10px;
+  text-align: center;
+  -ms-flex-line-pack: space-evenly;
+  align-content: space-evenly;
+}
+//special page list
+.special_li {
+  margin-top: 20px;
+  -moz-text-align-last: left;
+  text-align-last: left;
+  margin-right: 20px;
+}
+//special page picture
+.special_pic {
+  width: 250px;
+  height: auto;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 1150px) {
+  //change home grid form 4 to 2
+  .bottomwrap {
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+  }
+
+  //align service pic
+  .service_pic2,
+  .service_pic1 {
+    float: none;
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+  }
+  //realign service list box 1 and 3
+  .list_serv2 {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 600px) {
+  //change grid form 2 to 1
+  .bottomwrap {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+  .specialwrap {
+    display: block;
+  }
+  .box .special_box {
+    margin: 10px;
+    min-width: 325px;
+  }
+  .container {
+    min-width: 325px;
+  }
+}
